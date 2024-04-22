@@ -1,0 +1,71 @@
+jsx
+import React from 'react';
+const Session = ({ title, description, time, date, location }) => {
+  return (
+    <div className="session">
+      <h2>{title}</h2>
+      <p>{description}</p>
+      <p>{time} - {date}</p>
+      <p>{location}</p>
+      <button className="btn">Inscreva-se</button>
+    </div>
+  );
+}
+export default Session;
+jsx
+import React from 'react';
+const Gallery = () => {
+  const images = [
+    'image1.jpg',
+    'image2.jpg',
+    'image3.jpg',
+    'image4.jpg',
+    'image5.jpg',
+    'image6.jpg'
+  ];
+ return (
+    <div className="gallery">
+      {images.map((image, index) => (
+        <img key={index} src={require(`./images/${image}`)} alt={`Image ${index + 1}`} />
+      ))}
+    </div>
+  );
+}
+import React from 'react';
+const Header = () => {
+  return (
+    <header>
+      <h1>Evento no Senai</h1>
+    </header>
+  );
+export default Header;
+const Footer = () => {
+  return (
+    <footer>
+      <p>&copy; 2022 Evento no Senai</p>
+    </footer>
+  );
+}
+  return (
+    <div className="gallery">
+      {images.map((image, index) => (
+        <img key={index} src={require(`./images/${image}`)} alt={`Image ${index + 1}`} />
+      ))}
+    </div>
+  );
+}
+import React from 'react';
+const Header = () => {
+  return (
+    <header>
+      <h1>Evento no Senai</h1>
+    </header>
+  );
+export default Header;
+const Footer = () => {
+  return (
+    <footer>
+      <p>&copy; 2022 Evento no Senai</p>
+    </footer>
+  );
+}
